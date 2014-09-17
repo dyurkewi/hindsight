@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hindsight</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Start</string>
+    <string name="button_startAcc">Accelerometer</string>
+    <string name="button_startVoice">Voice</string>
+    <string name="button_startCamera">Camera</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_display_message">About</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_acc_message">Move the Ball!</string>
+    <string name="title_activity_voice">Voice</string>
+    <string name="title_activity_camera">Camera</string>
+    <string name="loading">Loading MJPEG&#8230;</string>
+    
+
+    <!-- From SimpleMjpegView activity -->
+    <string name="hostname">Host Name (IP address)</string>
+    <string name="portnum">Port Number</string>
+    <string name="start">Start</string>
+    <string name="defaultHostName">192.168.0.12</string>
+    <string name="defaultPortNum">5000</string>
+    <string name="onclick">onClick</string>
+    <string name="height">Height</string>
+    <string name="width">Width</string>
+    <string name="defaultWidth">320</string>
+    <string name="defaultHeight">240</string>
+    <string name="title_activity_preference">PreferenceActivity</string>
+    <string name="title_activity_mjpeg_view">MjpegView</string>
+    <string name="title_activity_mjpeg_input_stream">MjpegInputStream</string>
+    <string name="title_activity_mjpeg">MjpegActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+</resources>
