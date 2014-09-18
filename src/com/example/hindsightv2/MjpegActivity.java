@@ -79,7 +79,8 @@ public class MjpegActivity extends Activity {
     	protected MjpegInputStream doInBackground( String... params){
     		Socket socket = null;
     		try {
-				socket = new Socket( params[0], Integer.valueOf( params[1]));
+    			//create "Socket" with hostname and port #, and return InputStream.. Create output stream?
+				socket = new Socket( params[0], Integer.valueOf( params[1])); 
 	    		return (new MjpegInputStream(socket.getInputStream()));
 			} catch (UnknownHostException e) {
 				// TODO Auto-generated catch block
