@@ -1,7 +1,5 @@
 package com.example.hindsightv2;
 
-
-
 import java.io.IOException;
 import java.net.Socket;
 import java.net.UnknownHostException;
@@ -13,13 +11,16 @@ import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.Window;
 import android.view.WindowManager;
+
+
 
 public class MjpegActivity extends Activity {
 	private static final boolean DEBUG=false;
     private static final String TAG = "MJPEG";
-
+    
     private MjpegView mv = null;
     
     public void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,8 @@ public class MjpegActivity extends Activity {
         
         setContentView(R.layout.activity_mjpeg);
         mv = (MjpegView) findViewById(R.id.mv);
+        //img = (ImageView)findViewById(R.id.imageView1);
+        //SGD = new ScaleGestureDetector(this,new ScaleListener());
         
         // receive parameters from PreferenceActivity
         Bundle bundle = getIntent().getExtras();
@@ -98,5 +101,11 @@ public class MjpegActivity extends Activity {
             mv.setDisplayMode(MjpegView.SIZE_BEST_FIT);
             mv.showFps(true);
         }
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+       // Inflate the menu; this adds items to the action bar if it is present.
+       getMenuInflater().inflate(R.menu.main, menu);
+       return true;
     }
 }

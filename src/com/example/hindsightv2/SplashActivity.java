@@ -8,6 +8,7 @@ import java.util.Properties;
 import com.jcraft.jsch.*;
 import java.awt.*;
 import java.util.Properties;
+import android.util.Log;
 
 
 import com.camera.simplemjpeg.MjpegInputStream;
@@ -26,20 +27,20 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.app.Activity;
 import android.content.Intent;
+import android.util.Log;
 import android.view.Menu;
  
 public class SplashActivity extends Activity {
-		
 	String username = "pi";
     String password = "Da1ni9el!";
     String hostname = "192.168.0.12";
     int port = 22;
     
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        
         new initSSH().execute( hostname, password, hostname);
         
 		new Handler().postDelayed(new Runnable() {
@@ -59,7 +60,7 @@ public class SplashActivity extends Activity {
 		        		SplashActivity.this.startActivity( intent);
 		        		SplashActivity.this.finish();
 		            }
-		        }, 10000); //set in ms
+		        }, 5000); //set in ms
         
          
         

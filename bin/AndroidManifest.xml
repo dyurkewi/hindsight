@@ -72,6 +72,10 @@
             android:name=".SplashActivity"
             android:label="@string/title_activity_splash" >
         </activity>
+        <activity
+            android:name=".PanAndZoomListener1"
+            android:label="@string/title_activity_pan_and_zoom_listener1" >
+        </activity>
     </application>
 
 </manifest>

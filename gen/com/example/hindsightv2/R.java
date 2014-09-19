@@ -1209,10 +1209,11 @@ containing a value of this type.
         public static final int activity_display_message=0x7f03001a;
         public static final int activity_main=0x7f03001b;
         public static final int activity_mjpeg=0x7f03001c;
-        public static final int activity_preference=0x7f03001d;
-        public static final int activity_splash=0x7f03001e;
-        public static final int activity_voice=0x7f03001f;
-        public static final int support_simple_spinner_dropdown_item=0x7f030020;
+        public static final int activity_pan_and_zoom_listener1=0x7f03001d;
+        public static final int activity_preference=0x7f03001e;
+        public static final int activity_splash=0x7f03001f;
+        public static final int activity_voice=0x7f030020;
+        public static final int support_simple_spinner_dropdown_item=0x7f030021;
     }
     public static final class menu {
         public static final int acc_message=0x7f0c0000;
@@ -1222,10 +1223,11 @@ containing a value of this type.
         public static final int mjpeg=0x7f0c0004;
         public static final int mjpeg_input_stream=0x7f0c0005;
         public static final int mjpeg_view=0x7f0c0006;
-        public static final int preference=0x7f0c0007;
-        public static final int splash=0x7f0c0008;
-        public static final int test=0x7f0c0009;
-        public static final int voice=0x7f0c000a;
+        public static final int pan_and_zoom_listener1=0x7f0c0007;
+        public static final int preference=0x7f0c0008;
+        public static final int splash=0x7f0c0009;
+        public static final int test=0x7f0c000a;
+        public static final int voice=0x7f0c000b;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1295,6 +1297,7 @@ containing a value of this type.
         public static final int title_activity_mjpeg=0x7f0a0028;
         public static final int title_activity_mjpeg_input_stream=0x7f0a0027;
         public static final int title_activity_mjpeg_view=0x7f0a0026;
+        public static final int title_activity_pan_and_zoom_listener1=0x7f0a002a;
         public static final int title_activity_preference=0x7f0a0025;
         public static final int title_activity_splash=0x7f0a0029;
         public static final int title_activity_voice=0x7f0a0018;

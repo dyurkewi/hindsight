@@ -15,7 +15,6 @@
     <string name="title_activity_voice">Voice</string>
     <string name="title_activity_camera">Camera</string>
     <string name="loading">Loading MJPEG&#8230;</string>
-    
 
     <!-- From SimpleMjpegView activity -->
     <string name="hostname">Host Name (IP address)</string>
@@ -33,5 +32,6 @@
     <string name="title_activity_mjpeg_input_stream">MjpegInputStream</string>
     <string name="title_activity_mjpeg">MjpegActivity</string>
     <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_pan_and_zoom_listener1">PanAndZoomListener1</string>
 
 </resources>
