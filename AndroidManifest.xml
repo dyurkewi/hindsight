@@ -19,7 +19,8 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape" >
 
             <!-- android:permission="com.example.hindsightv2.RECORD_AUDIO"> -->
             <intent-filter>
@@ -75,6 +76,12 @@
         <activity
             android:name=".PanAndZoomListener1"
             android:label="@string/title_activity_pan_and_zoom_listener1" >
+        </activity>
+        <activity
+            android:name=".MjpegURLActivity"
+            android:label="@string/title_activity_mjpeg_url" 
+            android:permission="com.example.hindsightv2.INTERNET"
+            android:screenOrientation="landscape">
         </activity>
     </application>
 

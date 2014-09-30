@@ -360,7 +360,29 @@ public class MjpegView extends SurfaceView implements SurfaceHolder.Callback {
 	    mTouchY = metrics.heightPixels / 2; //1080p/2=540
     }
     
-    public MjpegView(Context context) { super(context); init(context); }
+    public MjpegView(Context context) { 
+    	super(context); init(context); 
+    
+	    // we need to get a call for onSurfaceCreated
+	    SurfaceHolder sh = this.getHolder();
+	    sh.addCallback(this);
+	
+	    // for zooming (scaling) the view with two fingers
+	    mScaleDetector = new ScaleGestureDetector(context, new ScaleListener());	
+	    boundingBox.set(88, 1, 1706, 1078);
+	    //boundingBox.set(0,0,320,240);
+	
+	    paint.setColor(Color.GREEN);
+	    paint.setStyle(Style.STROKE);
+	
+	    setFocusable(true);
+	
+	    // initial center/touch point of the view (otherwise the view would jump
+	    // around on first pan/move touch
+	    DisplayMetrics metrics = context.getResources().getDisplayMetrics();
+	    mTouchX = metrics.widthPixels / 2;  //1794p/2=897
+	    mTouchY = metrics.heightPixels / 2; //1080p/2=540
+    }
 
 	@SuppressLint("ClickableViewAccessibility")
 	@Override

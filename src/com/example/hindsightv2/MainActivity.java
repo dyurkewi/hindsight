@@ -68,4 +68,9 @@ public class MainActivity extends ActionBarActivity {
     	Intent intent = new Intent(this, PreferenceActivity.class);
     	startActivity(intent);
     }
+    
+    public void starturl(View view){
+    	Intent intent = new Intent(this, MjpegURLActivity.class);
+    	startActivity(intent);
+    }
 }
