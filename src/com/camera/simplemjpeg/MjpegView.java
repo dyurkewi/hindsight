@@ -61,7 +61,7 @@ public class MjpegView extends SurfaceView implements SurfaceHolder.Callback {
     
     private MjpegViewThread thread;
     private MjpegInputStream mIn = null;    
-    private boolean showFps = false;
+    private boolean showFps = true;
     private boolean mRun = false;
     private boolean surfaceDone = false;    
 
@@ -255,7 +255,7 @@ public class MjpegView extends SurfaceView implements SurfaceHolder.Callback {
         overlayPaint.setTextSize(12);
         overlayPaint.setTypeface(Typeface.DEFAULT);
         overlayTextColor = Color.WHITE;
-        overlayBackgroundColor = Color.BLACK;
+        overlayBackgroundColor = Color.TRANSPARENT;
         ovlPos = MjpegView.POSITION_LOWER_RIGHT;
         displayMode = MjpegView.SIZE_STANDARD;
         dispWidth = getWidth();

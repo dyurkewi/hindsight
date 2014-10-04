@@ -1,7 +1,8 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:columnCount="6"
     android:orientation="horizontal"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -11,9 +12,8 @@
 
     <EditText
         android:id="@+id/edit_message"
-        android:layout_width="0dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:hint="@string/edit_message" />
 
     <Button
@@ -27,20 +27,32 @@
         android:layout_height="wrap_content"
         android:onClick="startAccelerometer"
         android:text="@string/button_startAcc" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="startVoice"
         android:text="@string/button_startVoice" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="startCamera"
         android:text="@string/button_startCamera" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="right|center_vertical"
+        android:layout_row="0"
         android:onClick="starturl"
         android:text="@string/button_starturl" />
 
-</LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="SendCommand"
+        android:text="@string/button_sendcommand" />
+
+</GridLayout>

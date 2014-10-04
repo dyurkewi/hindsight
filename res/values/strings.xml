@@ -8,6 +8,10 @@
     <string name="button_startVoice">Voice</string>
     <string name="button_startCamera">Camera</string>
     <string name="button_starturl">URL</string>
+    <string name="button_sendcommand">Command</string>
+    <string name="button_sendmessage">Command</string>
+    
+    <string name="command_message">Hello World</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_display_message">About</string>
@@ -35,5 +39,6 @@
     <string name="title_activity_splash">SplashActivity</string>
     <string name="title_activity_pan_and_zoom_listener1">PanAndZoomListener1</string>
     <string name="title_activity_mjpeg_url">MjpegURLActivity</string>
+    <string name="title_activity_command">CommandActivity</string>
 
 </resources>

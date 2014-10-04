@@ -31,7 +31,7 @@ public class MjpegURLActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        String URL = "http://192.168.0.12:8080";
+        String URL = "http://192.168.0.17:8080";
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, 

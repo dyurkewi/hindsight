@@ -73,4 +73,8 @@ public class MainActivity extends ActionBarActivity {
     	Intent intent = new Intent(this, MjpegURLActivity.class);
     	startActivity(intent);
     }
+    public void SendCommand(View view){
+    	Intent intent = new Intent(this, CommandActivity.class);
+    	startActivity(intent);
+    }
 }
